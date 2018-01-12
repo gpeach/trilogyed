@@ -211,6 +211,9 @@ p, h2 {
 
   #faq {
     background-image: url("../images/mobile/fap_mobile.jpg");
-    height: 850px; } }
+    height: 850px; }
+
+  .row {
+    padding: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
