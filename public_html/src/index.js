@@ -1,5 +1,4 @@
 require('./jquery-color');
-require('bootstrap');
 require('./bgswitcher');
 import Parallax from 'parallax-scroll';
 

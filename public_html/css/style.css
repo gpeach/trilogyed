@@ -9,7 +9,8 @@ body {
   max-height: 90px; }
 
 .featureicon img {
-  max-height: 100px; }
+  max-height: 100px;
+  margin: 20px; }
 
 .container-fluid {
   min-width: 480px;
@@ -41,7 +42,7 @@ body {
     font-size: 20px;
     display: block; }
 #hero #learn {
-  margin-top: 60px; }
+  margin-top: 30px; }
 #hero #programinfo {
   margin-top: 30px; }
 #hero #programinfo {

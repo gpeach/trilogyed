@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Trilogy Education</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">-->
-        <link href="css/bootstrap-patched.css" rel="stylesheet" type="text/css"/>
-        <!--                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <!--        <link href="css/bootstrap-patched.css" rel="stylesheet" type="text/css"/>-->
         <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -19,18 +13,17 @@ and open the template in the editor.
         <div class="container-fluid">
 
             <div id="herobox">
-                <!--                <img class="bottom" src="images/mobile/code_mobile_hero.jpg" />
-                  <img class="top" src="images/mobile/data_mobile_hero.jpg" />-->
                 <div id="header" class='row no-gutters'>
-                    <div class="col-xs-5">
-                        <div class="logo"><img src="images/logos/logo_trilogy.svg" /></div>
-                    </div>
-                    <div id="admissions" class="col-xs-5 col-xs-offset-1">
+                    <div id="admissions" class="col-sm-4 order-sm-2 offset-sm-2">
                         <div class="headertext">To speak with an admissions advisor call <span class="phone">(555)123-4567</span></div>
                     </div>
+                    <div class="col-sm-4 order-sm-1 offset-sm-1">
+                        <div class="logo"><img src="images/logos/logo_trilogy.svg" /></div>
+                    </div>
+
                 </div>
                 <div id="hero" class='row no-gutters'>
-                    <div class="col-xxs-12 col-xs-4 col-xs-offset-1">   
+                    <div class="col-xs-12 col-sm-4 offset-sm-1">   
                         <div id="learn">
                             <h1>Learn Coding in 24 Weeks<span class="tagline">Class starts May 15, 2018</span></h1>
 
@@ -45,7 +38,7 @@ and open the template in the editor.
                             </form>
                         </div>
                     </div>
-                    <div class="col-xxs-12 col-xs-5 col-xs-offset-1">
+                    <div class="col-xs-12 col-sm-5 offset-sm-1">
                         <div id="coding">
                             <div id="codingheadline">Coding</div>
                             <div id="codingtext">Coding Boot Camp equips students with skills for full stack web development through dynamic, in-person classes.</div>
@@ -63,28 +56,31 @@ and open the template in the editor.
             <div id="feature" class='row no-gutters'>                  
 
 
-                <div id="dOne" class="col-xxs-12 col-xs-4">
+                <div id="dOne" class="col-xs-12 col-sm-4 order-sm-1">
                     <div class="featureicon"><img src="images/icons/data_coding.svg" /></div>
                     <div>Learn Advanced Excel, Python, JavaScript (D3.js, Leaflet.js), HTML5/CSS, API Interactions, Social Media Mining, Sql, Tableau, Advanced Statistics, Machine Learning, R, Git/GitHub, and more.*</div>
                     <div class="featureicon"><img src="images/icons/benefit.svg" /></div>
                     <div>Benefit from a wide range of career services to position you for success as you work to advance in your current career or seek a new opportunity.</div>
                 </div>
 
-                <div id="dTwo" class="col-xxs-12 col-xs-4">
+                <div id="dTwo" class="col-xs-12 col-sm-4 order-sm-2">
                     <h2>
                         <a href="#">Featuring</a>
                     </h2>
                     <img src="images/phone.png" alt=""/>
                 </div>
 
-                <div id="dThree" class="col-xxs-12 col-xs-4">
+                <div id="dThree" class="col-xs-12 col-sm-4 order-sm-3">
                     <div class="featureicon"><img src="images/icons/time.svg" /></div>
                     <div>Study part-time, three days a week, while maintaining your work schedule.</div>
                     <div class="featureicon"><img src="images/icons/complete_proj.svg" /></div>
                     <div>Complete projects using real data sets from the worlds of finance, healthcare, government, social welfare, and more - allowing you to build a strong portfolio with a professional demonstration.</div>
                 </div>
 
-                <div>*The material covered in this course is subject to change due to market demand.</div>
+                <div id="dFour" class="col-xs-12 col-sm-12 order-sm-4 order-4 ">
+                    <div>*The material covered in this course is subject to change due to market demand.</div>
+                </div>
+
             </div>
             <div id="ourstory" class='row o-banner no-gutters'>
                 <div class="ostext">
@@ -96,7 +92,7 @@ and open the template in the editor.
                 <div class="o-banner__img js-parallax-bg"></div>
             </div>
             <div id="faq" class='row no-gutters'>
-                <div class="col-xs-10 col-xs-offset-1">
+                <div class="col-sm-10 offset-sm-1">
                     <h2>
                         <a href="#">Frequently Asked Questions</a>
                     </h2>
@@ -156,10 +152,10 @@ and open the template in the editor.
             </div>
 
             <div id="footer" class='row no-gutters'>
-                <div class="col-sm-6">
+                <div class="col-sm-4 offset-sm-1">
                     <div class="logo"><img src="images/logos/logo_trilogy_blk.svg" /></div>  
                 </div>
-                <div class="col-sm-6">  
+                <div class="col-sm-4 offset-sm-1">  
                     <div class="footertext">This program is offered through XXX.  Powered by Trilogy Education Services<br>Contact bootcamp at <span class="phone">(xxx) xxx-xxxx</span><br>
                         Terms & Conditions | Privacy/Your Privacy Rights</div>
                 </div>
@@ -177,6 +173,7 @@ and open the template in the editor.
             src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
             integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
         <script>
             $(function () {
                 $("#accordion").accordion();
