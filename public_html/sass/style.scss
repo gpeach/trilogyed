@@ -1,0 +1,263 @@
+//colors
+$scooter: #38bcdb;
+$astral: #2E91A3;
+$bombay: #A9AAAB;
+$alto: #DCDCDC;
+
+p, h2 {
+    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto Slab', serif !important;
+}
+
+body {
+    background: grey !important;
+}
+.logo {
+    img {
+        max-height: 90px;
+    }
+}
+
+.featureicon {
+    img {
+        max-height: 100px;
+    }
+}
+
+.container-fluid {
+    min-width: 480px;
+    max-width: 1366px;
+    margin: 0 auto; 
+}
+.row {
+    //height: 200px;
+}
+#header {
+    background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 !important;
+    height: auto;
+    color: white;
+    #admissions {
+        display: flex;
+        min-height: 100px;
+    }
+    .headertext {
+
+        align-items: center;
+    }
+    .phone {
+        color: $scooter;
+    }
+}
+#herobox {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#hero {
+    //background: orange;
+    h1 {
+        color: white;
+        .tagline {
+            font-size: 20px;
+            display: block;
+        }
+    }
+    #learn {
+        margin-top: 60px;
+    }
+        #programinfo {
+        margin-top: 30px;
+    }
+    #programinfo {
+        background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+        background: rgba(255, 255, 255, 0.5);
+        padding: .5em;
+        border-radius: 1em;
+        font-family: 'Roboto', sans-serif;
+
+        .proginf {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: black;
+            #ln, #fn {
+                display: inline-block;
+            }
+        }
+    }  
+    #coding {
+        margin-top: 50px;
+    }
+    #coding, #data {
+        position: relative;
+        color: white;
+        height: 150px;
+        max-width: 400px;
+        text-align: right;
+        float: right;
+    }
+    #codingheadline, #dataheadline {
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif !important; 
+    }
+    #codingtext, #datatext {
+        color: white;
+        font-size: 20px;
+    }  
+    #codingheadline {
+        color: $scooter; 
+    }
+    #dataheadline {
+        color: white;
+    }
+    #codingline {
+        background: $scooter; 
+    }
+    #dataline {
+        background: white;
+    }
+    #codingline, #dataline {
+        height: 5px;
+        margin-top: .5em;
+        max-width: 100%;
+    }
+}
+
+
+#feature {
+    color: white;
+    background-image: url('../images/mobile/featuring_mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    #dTwo {
+        img {
+            max-width: 350px;
+        }
+    }
+    h2 {
+        a, a:visited {
+            color: white;
+            text-decoration: underline;
+            line-height: 2;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+}
+#ourstory {
+    .ostext{
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        padding: 2.5em;
+        z-index: 4;
+        top: 10%;
+        h2 {
+            a, a:visited {
+                color: $scooter;
+                text-decoration: underline;
+                line-height: 2;
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+        }
+        p {
+            color: white;
+            font-size: 1.3em;
+            line-height: 1.9em;
+        }
+    }
+}
+#faq {
+    background-image: url('../images/faq.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 800px;
+    h2 {
+        a, a:visited {
+            color: black;
+            text-decoration: underline;
+            line-height: 2;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+    }
+}
+#accordion {
+    max-width: 500px;
+    h3 {
+        color: black;
+        font-size: 20px;
+    }
+    li {
+        font-size: 16px; 
+    }
+}
+#footer {
+    background: $scooter;
+    padding: 0;
+}
+
+.o-banner {
+    /**
+     * You'll likely want to set a height for the elements, perhaps based on the
+     * viewport as in this example
+     */
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.o-banner__img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-image: url('../images/mobile/about_mobile.jpg');
+    /**
+     * Adjust the height (or width), and offset the element's position based
+     * on the aspect of your images
+     */
+    height: 120%;
+    top: -5%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.container-fluid {
+    padding-right: 0px !important; 
+    padding-left: 0px !important; 
+}
+
+
+
+
+
+.col-xxs-6 {
+    width: 50%;
+}
+
+@media (max-width:567px){
+
+    #dOne {
+        order: 2;
+    }
+    #dTwo {
+        order: 1;
+    }
+    #dThree {
+        order: 3;
+    }
+}
