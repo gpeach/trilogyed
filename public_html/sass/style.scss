@@ -1,38 +1,85 @@
+
 //colors
+
 $scooter: #38bcdb;
 $astral: #2E91A3;
 $bombay: #A9AAAB;
 $alto: #DCDCDC;
 
-p, h2 {
-    font-family: 'Roboto', sans-serif !important;
-    font-family: 'Roboto Slab', serif !important;
-}
+// general
 
 body {
     background: grey !important;
+}
+p, h2 {
+    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto Slab', serif !important;
 }
 .logo {
     img {
         max-height: 90px;
     }
 }
-
+.littlebreak {
+    display: none;
+}
+.bigbreak {
+    display: inline;
+}
 .featureicon {
     img {
         max-height: 100px;
         margin: 20px;
     }
 }
-
 .container-fluid {
     min-width: 480px;
     max-width: 1366px;
-    margin: 0 auto; 
+    margin: 0 auto;     
+    padding-right: 0px !important; 
+    padding-left: 0px !important; 
 }
-.row {
-    //height: 200px;
+.o-banner {
+    /**
+     * You'll likely want to set a height for the elements, perhaps based on the
+     * viewport as in this example
+     */
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
 }
+
+.o-banner__img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-image: url('../images/mobile/about_mobile.jpg');
+    /**
+     * Adjust the height (or width), and offset the element's position based
+     * on the aspect of your images
+     */
+    height: 120%;
+    top: -5%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+// sections
+
+
 #header {
     background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
     background: rgba(0, 0, 0, 0.5);
@@ -40,11 +87,10 @@ body {
     height: auto;
     color: white;
     #admissions {
-        display: flex;
+
     }
     .headertext {
-
-        align-items: center;
+        text-align: right;
     }
     .phone {
         color: $scooter;
@@ -66,7 +112,7 @@ body {
     #learn {
         margin-top: 30px;
     }
-        #programinfo {
+    #programinfo {
         margin-top: 30px;
     }
     #programinfo {
@@ -200,46 +246,7 @@ body {
     padding: 0;
 }
 
-.o-banner {
-    /**
-     * You'll likely want to set a height for the elements, perhaps based on the
-     * viewport as in this example
-     */
-    min-height: 500px;
-    position: relative;
-    overflow: hidden;
-    z-index: 3;
-}
 
-.o-banner__img {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    background-image: url('../images/mobile/about_mobile.jpg');
-    /**
-     * Adjust the height (or width), and offset the element's position based
-     * on the aspect of your images
-     */
-    height: 120%;
-    top: -5%;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: translate3d(0, 0, 0);
-}
-.row.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
-.container-fluid {
-    padding-right: 0px !important; 
-    padding-left: 0px !important; 
-}
 
 
 
@@ -259,5 +266,21 @@ body {
     }
     #dThree {
         order: 3;
+    }
+    #dFour {
+        order: 3;
+    }
+    .littlebreak {
+        display: inline;
+    }
+    .bigbreak {
+        display: none;
+    }
+    #header .headertext {
+        text-align: center;
+    }
+    #faq {
+        background-image: url('../images/mobile/fap_mobile.jpg');
+        height: 850px;
     }
 }

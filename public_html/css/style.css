@@ -1,12 +1,18 @@
+body {
+  background: grey !important; }
+
 p, h2 {
   font-family: 'Roboto', sans-serif !important;
   font-family: 'Roboto Slab', serif !important; }
 
-body {
-  background: grey !important; }
-
 .logo img {
   max-height: 90px; }
+
+.littlebreak {
+  display: none; }
+
+.bigbreak {
+  display: inline; }
 
 .featureicon img {
   max-height: 100px;
@@ -15,7 +21,44 @@ body {
 .container-fluid {
   min-width: 480px;
   max-width: 1366px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-right: 0px !important;
+  padding-left: 0px !important; }
+
+.o-banner {
+  /**
+   * You'll likely want to set a height for the elements, perhaps based on the
+   * viewport as in this example
+   */
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+  z-index: 3; }
+
+.o-banner__img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-image: url("../images/mobile/about_mobile.jpg");
+  /**
+   * Adjust the height (or width), and offset the element's position based
+   * on the aspect of your images
+   */
+  height: 120%;
+  top: -5%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate3d(0, 0, 0); }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }
 
 #header {
   background: black;
@@ -24,10 +67,8 @@ body {
   padding: 0 !important;
   height: auto;
   color: white; }
-  #header #admissions {
-    display: flex; }
   #header .headertext {
-    align-items: center; }
+    text-align: right; }
   #header .phone {
     color: #38bcdb; }
 
@@ -143,45 +184,6 @@ body {
   background: #38bcdb;
   padding: 0; }
 
-.o-banner {
-  /**
-   * You'll likely want to set a height for the elements, perhaps based on the
-   * viewport as in this example
-   */
-  min-height: 500px;
-  position: relative;
-  overflow: hidden;
-  z-index: 3; }
-
-.o-banner__img {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  background-image: url("../images/mobile/about_mobile.jpg");
-  /**
-   * Adjust the height (or width), and offset the element's position based
-   * on the aspect of your images
-   */
-  height: 120%;
-  top: -5%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translate3d(0, 0, 0); }
-
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0; }
-
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0; }
-
-.container-fluid {
-  padding-right: 0px !important;
-  padding-left: 0px !important; }
-
 .col-xxs-6 {
   width: 50%; }
 
@@ -193,6 +195,22 @@ body {
     order: 1; }
 
   #dThree {
-    order: 3; } }
+    order: 3; }
+
+  #dFour {
+    order: 3; }
+
+  .littlebreak {
+    display: inline; }
+
+  .bigbreak {
+    display: none; }
+
+  #header .headertext {
+    text-align: center; }
+
+  #faq {
+    background-image: url("../images/mobile/fap_mobile.jpg");
+    height: 850px; } }
 
 /*# sourceMappingURL=style.css.map */
