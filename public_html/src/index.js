@@ -9,11 +9,11 @@ const parallaxBgInstance = new Parallax('.js-parallax-bg', {
 
 parallaxBgInstance.animate();
 
-    $('#herobox').bgswitcher({
-        images: ["images/code_hero.jpg", "images/data_hero.jpg"],
-        effect: "fade",
-        interval: 5000
-    });
+$('#herobox').bgswitcher({
+    images: ["images/code_hero.jpg", "images/data_hero.jpg"],
+    effect: "fade",
+    interval: 5000
+});
 
 $(document).ready(function () {
 
