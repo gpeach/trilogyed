@@ -314,7 +314,7 @@ p, h2 {
 
   #faq {
     background-image: url("../images/faq.jpg");
-    min-height: 800px; } }
+    height: 980px; } }
 @media (min-width: 992px) {
   #hero h1 {
     font-size: 3rem; } }
@@ -340,10 +340,10 @@ p, h2 {
     display: none; }
 
   #faq {
-    height: 900px; }
+    height: 980px; }
 
   #footer {
-    font-size: 16px; }
+    font-size: 14px; }
 
   #footer .logo img {
     max-height: 120px; } }
