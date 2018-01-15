@@ -15,19 +15,46 @@ $('#herobox').bgswitcher({
     interval: 5000
 });
 
-$(document).ready(function () {
+$('#learn2').bgswitcher({
+    images: ["images/mobile/code_mobile_hero.jpg", "images/mobile/data_mobile_hero.jpg"],
+    effect: "fade",
+    interval: 5000
+});
 
+
+
+$(document).ready(function () {
+//$("#learn2 #learntext1")
+//                .css("opacity", '0');
     setInterval(function () {
-        $("#herobox #coding")
-                .animate({top: "+=150px"}, 500)
+        $("#learn2 #learntext1")
+                .animate({opacity: "1"}, 500)
                 .delay(4500)
-                .animate({top: "-=150px"}, 500)
+                .animate({opacity: "0"}, 500)
+                .delay(4500);
+
+        $("#learn2 #learntext2")
+                .animate({opacity: "0"}, 500)
+                .delay(4500)
+                .animate({opacity: "1"}, 500)
+                .delay(4500);
+
+//        $("#hero #learn2")
+//                .css('background-image', 'url(images/mobile/code_mobile_hero.jpg)')
+//                .delay(5000)
+//                .css('background-image', 'url(images/mobile/data_mobile_hero.jpg)')
+//                .delay(5000);
+
+        $("#herobox #coding")
+                .animate({top: "+=180px"}, 500)
+                .delay(4500)
+                .animate({top: "-=180px"}, 500)
                 .delay(4500);
 
         $("#herobox #data")
-                .animate({top: "-=150px"}, 500)
+                .animate({top: "-=180px"}, 500)
                 .delay(4500)
-                .animate({top: "+=150px"}, 500)
+                .animate({top: "+=180px"}, 500)
                 .delay(4500);
 
         $("#codingheadline")

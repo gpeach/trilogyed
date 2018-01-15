@@ -15,11 +15,7 @@ p, h2 {
     font-family: 'Roboto', sans-serif !important;
     font-family: 'Roboto Slab', serif !important;
 }
-.logo {
-    img {
-        max-height: 90px;
-    }
-}
+
 .littlebreak {
     display: inline;
 }
@@ -65,21 +61,16 @@ p, h2 {
     background-size: cover;
     transform: translate3d(0, 0, 0);
 }
-.row.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
-}
+
 
 // sections
 
 #header {
+    .logo img {
+        height: 90px;
+    }
     background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     padding: 0 !important;
     height: auto;
     color: white;
@@ -98,19 +89,69 @@ p, h2 {
     background-repeat: no-repeat;
 }
 #hero {
-    //background: orange;
     h1 {
         color: white;
+        font-family: "Roboto", sans-serif;
+        font-size: 2.3rem;
+        line-height: 1.1;
+        font-weight: 900;
         .tagline {
-            font-size: 20px;
+            font-size: 1.2rem;
             display: block;
+            font-family: 'Roboto Slab', serif !important;
+            font-weight: normal;
         }
     }
-    #learn {
-        margin-top: 30px;
+    #learn2 {
+        //background-image: url('../images/mobile/code_mobile_hero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    #learn2wrap {
+        position: relative;
+        height:140px;
+    }
+    #learntext1, #learntext2 {
+        color: white;
+        font-size: 1.1rem;
+        line-height: 1.2;
+    } 
+
+    #learntext1 {
+        display: block;
+        opacity: 0;
+        position: absolute;
+    }
+    #learntext2 {
+        display: block;  
+        opacity: 1;
+        position: absolute;
+    }
+    .fa-angle-left {
+        padding-right: 50px;
+    }
+    .fa-angle-right {
+        padding-left: 50px;
+    }
+
+    #learnline {
+        height: 4px;
+        margin-top: .5em;
+        max-width: 100%;
+        background: #39bbdb;
+        margin: 0 auto;
+        width: 60%;
+        display: inline-block;
+    }
+    i.fa {
+        color: white;
+        font-size: 3rem;
     }
     #programinfo {
-        margin-top: 30px;
+        // margin-top: 30px;
     }
     #programinfo {
         position: relative;
@@ -119,21 +160,33 @@ p, h2 {
         padding: 1em;
         border-radius: .25em;
         font-family: 'Roboto', sans-serif;
+        p {
+            text-align: center;
+        }
 
         .proginf {
-            font-size: 20px;
-            text-transform: uppercase;
+            font-size: 1.5rem;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             color: black;
+            text-transform: uppercase;
+            font-weight: 900;
+
             #ln, #fn {
                 display: inline-block;
             }
         }
         #cont {
             position: relative;
-            margin-top: 10px;
-            height: 41px;
         }
+        #cont img {
+            //background: #39BBDC;
+            display: block;
+            border:none;
+            //background-size: 100% auto;
+            width: 100%;
+            height: auto;
+        }
+
         ::placeholder {
             color: black;
             text-align: center;
@@ -156,33 +209,31 @@ p, h2 {
             margin-left: 5%;
             border-bottom: 1px solid black;
         }
-        #pressed, #unpressed{
-            position: absolute;
-            width: 100%;
-            height: auto;
-        }
-        #unpressed{opacity: 1; cursor: pointer;}
-        #unpressed:hover{opacity: 0;}
-
     }  
+    #codinganimation {
+        height: 360px;
+        padding-left: 15px;
+    }
     #coding {
-        margin-top: 50px;
+        //margin-top: 50px;
     }
     #coding, #data {
         position: relative;
         color: white;
-        height: 150px;
-        width: 400px;
+        height: 180px;
+        //width: 400px;
         text-align: right;
         float: right;
     }
     #codingheadline, #dataheadline {
-        font-size: 24px;
+        font-size: 2.3rem;
         font-family: 'Roboto', sans-serif !important; 
     }
+
     #codingtext, #datatext {
         color: white;
-        font-size: 20px;
+        font-size: 1.3rem;
+        line-height: 1.2;
     }  
     #codingheadline {
         color: $scooter; 
@@ -213,7 +264,7 @@ p, h2 {
     #dOne {
         order: 1;
         img {
-            width: 100%;
+            max-width: 80%;
         }
     }
     #dTwo {
@@ -227,11 +278,12 @@ p, h2 {
     }
 
     h2 {
+
         a, a:visited {
             color: white;
             text-decoration: underline;
             line-height: 2;
-            font-size: 1.2em;
+            font-size: 2.4rem;
             font-weight: 400;
         }
     }
@@ -242,7 +294,7 @@ p, h2 {
     .ostext{
         text-align: center;
         margin: 0 auto;
-        padding: 2.5em;
+        padding: 2.4rem;
         z-index: 4;
         top: 10%;
         h2 {
@@ -263,31 +315,34 @@ p, h2 {
 }
 #faq {
     background-image: url('../images/mobile/fap_mobile.jpg');
-    height: 850px;
+    //height: 850px;
 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: right 50% bottom;
+
 
     h2 {
         a, a:visited {
             color: black;
             text-decoration: underline;
-            line-height: 2;
-            font-size: 1.2em;
-            font-weight: 400;
+            //line-height: 2;
+            font-family: 'Roboto', san-serif !important;
+            font-size: 2.5rem;
+            font-weight: 600;
         }
     }
 }
 #accordion {
-    max-width: 500px;
+    color: black;
+    font-family: 'Roboto Slab', serif !important;
     h3 {
-        color: #A9AAAB;
-        font-size: 20px;
+        color: black;
+        font-size: 1.2rem;
+        margin-bottom: .35em;
     }
     li {
-        font-size: 16px;
-        color: #A9AAAB;
+        font-size: 1rem;   
     }
 }
 .ui-icon.iconOpen {
@@ -312,7 +367,13 @@ p, h2 {
 }
 #footer {
     background: $scooter;
+    color: black;
+    font-size: 12px;
     padding: 0;
+    font-family: 'Roboto Slab', serif !important;
+    .logo img {
+        max-height: 120px;
+    }
 }
 
 
@@ -320,13 +381,20 @@ p, h2 {
 
 
 @media (min-width:768px){
+    #hero h1{
+        font-size: 2.8rem;
+    }
+    #hero #learn2 {
+        display: none !important;
+    }
+
     .o-banner__img {
         background-image: url('../images/about.jpg');
         height: 180%;
         top: -5%;
     }
     #feature{
-            background-image: url('../images/featuring.jpg');
+        background-image: url('../images/featuring.jpg');
         #dOne {
             order: 2;
         }
@@ -338,6 +406,7 @@ p, h2 {
         }
         #dFour {
             order: 4;
+            text-align: center;
         }
     }
     .littlebreak {
@@ -351,13 +420,57 @@ p, h2 {
     }
     #faq {
         background-image: url('../images/faq.jpg');
-        height: 800px;
+        //height: 800px;
+    }
+}
+@media(min-width: 992px){
+    #hero h1{
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 767px){
+    .logo {
+        img {
+            max-height: 90px;
+        }
+    }
     .container {
         max-width: none;
         padding: 0;
     }
+    #header {
+        background: rgba(0, 0, 0, 1);
+    }
+    #hero #learn {
+        display: none;
+    }
+    #hero #programinfo {
+        background: rgba(255, 255, 255, 1);
+        border-radius: 0;
+    }
+    #codinganimation {
+        display: none;
+    }
+    #faq {
+        height: 900px;
+    }
+    #footer {
+        font-size: 16px;
+    }
+    #footer .logo img {
+        max-height: 120px;
+    }
+}
+
+@media(max-width: 991px){
+
+    #hero #codingheadline, #hero #dataheadline {
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif !important; 
+    }
+    #hero #codingtext, #hero #datatext {
+        color: white;
+        font-size: 16px;
+    }  
 }

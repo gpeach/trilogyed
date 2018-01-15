@@ -5,7 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <!--        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">-->
         <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -15,47 +18,62 @@
                 <div id="header">
                     <div class="container">
                         <div class='row no-gutters'>
-                            <div id="admissions" class="col-md-4 order-md-2 offset-md-2">
-                                <div class="headertext">To speak with an<span class="littlebreak"><br></span> admissions advisor call <span class="phone">(555)123-4567</span></div>
+                            <div id="admissions" class="mt-2 mb-2 mt-md-0 mb-md-0 col-md-8 order-md-2 d-md-flex justify-content-end">
+                                <div class="align-self-center text-center text-md-right headertext">To speak with an<span class="bigbreak"><br></span> admissions advisor call <span class="phone">(555)123-4567</span></div>
                             </div>
-                            <div class="col-md-4 order-md-1 offset-md-1">
-                                <div class="logo"><img src="images/logos/logo_trilogy.svg" /></div>
+                            <div class="mb-2 mb-md-0 col-md-4 order-md-1 mt-md-3 mb-md-3">
+                                <div class="logo text-center text-md-left"><img src="images/logos/logo_trilogy.svg" /></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="hero">
                     <div class="container">
-                        <div class='row no-gutters'>
-                            <div class="col-md-4 offset-md-1">   
-                                <div id="learn">
-                                    <h1>Learn Coding in<span class="bigbreak"><br></span> 24 Weeks<span class="tagline">Class starts May 15, 2018</span></h1>
-
-                                </div>
-                                <div id="programinfo">
-                                    <form>
-                                        <p><span class="proginf">Get program info</span><br>
-                                            Step 1 of 3</p>
-                                        <input id="fn" type="text" placeholder="First Name" />
-                                        <input id="ln" type="text" placeholder="Last Name" />
-
-                                        <div id="cont">
-                                            <img src="images/misc/continuehover.png" id="pressed"/>
-                                            <input id="unpressed" type="image" src="images/misc/continue.png" alt="Submit Form" />
-                                        </div>
-                                    </form>
+                        <div class="row no-gutters">
+                            <div id="learn2" class="col-12 text-center">
+                                <div class="mt-5 mb-5">
+                                    <h1>Learn Coding in 24 Weeks<span class="tagline">Class starts May 15, 2018</span></h1>
+                                    <i class="fa fa- fa-angle-left" aria-hidden="true"></i>
+                                    <div id="learnline" class="mt-3 mb-3"></div>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <div id="learn2wrap">
+                                        <div id="learntext2" class="pl-5 pr-5 ml-5 mr-5">Coding Boot Camp equips students with skills for full stack web development through dynamic, in-person classes.</div>
+                                        <div id="learntext1" class="pl-5 pr-5 ml-5 mr-5">Data Boot Camp equips students with the key skills for full stack web development through dynamic, in-person classes.</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-5 offset-md-1">
-                                <div id="coding">
-                                    <div id="codingheadline">Coding</div>
-                                    <div id="codingtext">Coding Boot Camp equips students with skills for full stack web development through dynamic, in-person classes.</div>
-                                    <div id="codingline"></div>
+                            <div class="col-md-5">   
+                                <div id="hero-left" class="mt-md-5 mb-md-3">
+
+                                    <div id="learn" class="">
+                                        <h1>Learn Coding <span class="bigbreak"><br></span>in 24 Weeks<span class="tagline">Class starts May 15, 2018</span></h1>
+                                    </div>
+                                    <div id="programinfo" class="mt-md-4">
+                                        <form>
+                                            <p><span class="proginf text-uppercase">Get program info</span><br>
+                                                Step 1 of 3</p>
+                                            <input id="fn" type="text" placeholder="First Name" />
+                                            <input id="ln" type="text" placeholder="Last Name" />
+
+                                            <div id="cont" class="mt-3 mt-md-2">
+                                                <img src="images/misc/continue.png" alt=""/>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <div id="data">
-                                    <div id="dataheadline">Data Analytics</div>
-                                    <div id="datatext">Data Boot Camp equips students with the key skills for full stack web development through dynamic, in-person classes.</div>
-                                    <div id="dataline"></div>
+                            </div>
+                            <div class="col-md-6 offset-md-1 text-md-right mt-md-2">
+                                <div id="codinganimation" class="float-right mt-md-5 mb-md-3 mb-lg-5">
+                                    <div id="coding">
+                                        <div id="codingheadline">Coding</div>
+                                        <div id="codingtext">Coding Boot Camp equips students with skills for full stack web development through dynamic, in-person classes.</div>
+                                        <div id="codingline"></div>
+                                    </div>
+                                    <div id="data">
+                                        <div id="dataheadline">Data Analytics</div>
+                                        <div id="datatext">Data Boot Camp equips students with the key skills for full stack web development through dynamic, in-person classes.</div>
+                                        <div id="dataline"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -65,26 +83,29 @@
 
             <div id="feature">        
                 <div class="container">
-                    <div class='row no-gutters'>
-                        <div id="dOne" class="col-md-4 order-md-2">
-                            <h2>
+                    <div class="row no-gutters">
+                        <div class="col-10 offset-1 offset-md-0 col-md-12 text-center">
+                            <h2 class="text-center mt-3">
                                 <a href="#">Featuring</a>
                             </h2>
+                        </div>
+                        <div id="dOne" class="col-10 offset-1 offset-md-0 col-md-4 order-md-2 text-center">
+
                             <img src="images/phone.png" alt=""/>
                         </div>
-                        <div id="dTwo" class="col-md-4 order-md-1">
+                        <div id="dTwo" class="col-10 offset-1 offset-md-0 col-md-4 order-md-1">
                             <div class="featureicon"><img src="images/icons/data_coding.svg" /></div>
                             <div>Learn Advanced Excel, Python, JavaScript (D3.js, Leaflet.js), HTML5/CSS, API Interactions, Social Media Mining, Sql, Tableau, Advanced Statistics, Machine Learning, R, Git/GitHub, and more.*</div>
                             <div class="featureicon"><img src="images/icons/benefit.svg" /></div>
                             <div>Benefit from a wide range of career services to position you for success as you work to advance in your current career or seek a new opportunity.</div>
                         </div>
-                        <div id="dThree" class="col-md-4 order-md-3">
+                        <div id="dThree" class="col-10 offset-1 offset-md-0 col-md-4 order-md-3">
                             <div class="featureicon"><img src="images/icons/time.svg" /></div>
                             <div>Study part-time, three days a week, while maintaining your work schedule.</div>
                             <div class="featureicon"><img src="images/icons/complete_proj.svg" /></div>
                             <div>Complete projects using real data sets from the worlds of finance, healthcare, government, social welfare, and more - allowing you to build a strong portfolio with a professional demonstration.</div>
                         </div>
-                        <div id="dFour" class="col-md-12 order-md-4 order-4 ">
+                        <div id="dFour" class="col-10 offset-1 offset-md-0 col-md-12 order-md-4 order-4 mb-5 mt-md-5 mb-md-5">
                             <div>*The material covered in this course is subject to change due to market demand.</div>
                         </div>
                     </div>
@@ -95,8 +116,8 @@
 
             <div id="ourstory">
                 <div class="container">
-                    <div class='row no-gutters'>
-                        <div class="ostext">
+                    <div class="row no-gutters">
+                        <div class="ostext col-12 mt-md-5 mb-md-5">
                             <h2>
                                 <a href="#">Our Story</a>
                             </h2>
@@ -111,12 +132,12 @@
 
             <div id="faq">
                 <div class="container">
-                    <div class='row no-gutters'>
-                        <div class="col-md-10 offset-md-1">
-                            <h2>
+                    <div class="row no-gutters">
+                        <div class="col-10 col-md-7 offset-1 offset-md-0">
+                            <h2 class="mt-5 mb-3 text-center text-md-left mt-md-5 mb-md-4">
                                 <a href="#">Frequently Asked Questions</a>
                             </h2>
-                            <div id="accordion">
+                            <div id="accordion" class=" mt-md-3 mb-md-5">
                                 <h3>When Does the Program Start?</h3>
                                 <div>
                                     <ul>
@@ -173,13 +194,15 @@
 
             <div id="footer">
                 <div class="container">
-                    <div class='row no-gutters'>
-                        <div class="col-md-4 offset-md-1">
-                            <div class="logo"><img src="images/logos/logo_trilogy_blk.svg" /></div>  
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <div class="mt-4 mb-4 mt-md-3 mb-md-3 logo text-center text-md-left">
+                                <img src="images/logos/logo_trilogy_blk.svg" />
+                            </div>  
                         </div>
-                        <div class="col-md-4 offset-md-1">  
-                            <div class="footertext">This program is offered through XXX.  Powered by Trilogy Education Services<br>Contact bootcamp at <span class="phone">(xxx) xxx-xxxx</span><br>
-                                Terms & Conditions | Privacy/Your Privacy Rights</div>
+                        <div class="mb-5 mb-md-3 col-md-8 d-md-flex justify-content-end">  
+                            <div class="align-self-center text-center text-md-right footertext">This program is offered through XXX.  Powered by Trilogy Education Services<br>Contact bootcamp at <span class="phone">(xxx) xxx-xxxx</span><br>
+                                <strong>Terms & Conditions</strong> | Privacy/Your Privacy Rights</div>
                         </div>
                     </div>
                 </div>
@@ -198,6 +221,8 @@
             integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
         <script>
             $(function () {
                 var icons = {

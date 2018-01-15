@@ -5,9 +5,6 @@ p, h2 {
   font-family: 'Roboto', sans-serif !important;
   font-family: 'Roboto Slab', serif !important; }
 
-.logo img {
-  max-height: 90px; }
-
 .littlebreak {
   display: inline; }
 
@@ -50,22 +47,15 @@ p, h2 {
   background-size: cover;
   transform: translate3d(0, 0, 0); }
 
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0; }
-
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-  padding-right: 0;
-  padding-left: 0; }
-
 #header {
   background: black;
   /* Fallback for older browsers without RGBA-support */
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   padding: 0 !important;
   height: auto;
   color: white; }
+  #header .logo img {
+    height: 90px; }
   #header .headertext {
     text-align: center; }
   #header .phone {
@@ -76,14 +66,51 @@ p, h2 {
   background-repeat: no-repeat; }
 
 #hero h1 {
-  color: white; }
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.3rem;
+  line-height: 1.1;
+  font-weight: 900; }
   #hero h1 .tagline {
-    font-size: 20px;
-    display: block; }
-#hero #learn {
-  margin-top: 30px; }
-#hero #programinfo {
-  margin-top: 30px; }
+    font-size: 1.2rem;
+    display: block;
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: normal; }
+#hero #learn2 {
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #hero #learn2 h1 {
+    font-size: 2rem; }
+#hero #learn2wrap {
+  position: relative;
+  height: 140px; }
+#hero #learntext1, #hero #learntext2 {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.2; }
+#hero #learntext1 {
+  display: block;
+  opacity: 0;
+  position: absolute; }
+#hero #learntext2 {
+  display: block;
+  opacity: 1;
+  position: absolute; }
+#hero .fa-angle-left {
+  padding-right: 50px; }
+#hero .fa-angle-right {
+  padding-left: 50px; }
+#hero #learnline {
+  height: 4px;
+  margin-top: .5em;
+  max-width: 100%;
+  background: #39bbdb;
+  margin: 0 auto;
+  width: 60%;
+  display: inline-block; }
+#hero i.fa {
+  color: white;
+  font-size: 3rem; }
 #hero #programinfo {
   position: relative;
   background: white;
@@ -92,17 +119,23 @@ p, h2 {
   padding: 1em;
   border-radius: .25em;
   font-family: 'Roboto', sans-serif; }
+  #hero #programinfo p {
+    text-align: center; }
   #hero #programinfo .proginf {
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 1.5rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: black; }
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900; }
     #hero #programinfo .proginf #ln, #hero #programinfo .proginf #fn {
       display: inline-block; }
   #hero #programinfo #cont {
-    position: relative;
-    margin-top: 10px;
-    height: 41px; }
+    position: relative; }
+  #hero #programinfo #cont img {
+    display: block;
+    border: none;
+    width: 100%;
+    height: auto; }
   #hero #programinfo ::placeholder {
     color: black;
     text-align: center; }
@@ -122,30 +155,22 @@ p, h2 {
     border: 0;
     margin-left: 5%;
     border-bottom: 1px solid black; }
-  #hero #programinfo #pressed, #hero #programinfo #unpressed {
-    position: absolute;
-    width: 100%;
-    height: auto; }
-  #hero #programinfo #unpressed {
-    opacity: 1;
-    cursor: pointer; }
-  #hero #programinfo #unpressed:hover {
-    opacity: 0; }
-#hero #coding {
-  margin-top: 50px; }
+#hero #codinganimation {
+  height: 360px;
+  padding-left: 15px; }
 #hero #coding, #hero #data {
   position: relative;
   color: white;
-  height: 150px;
-  width: 400px;
+  height: 180px;
   text-align: right;
   float: right; }
 #hero #codingheadline, #hero #dataheadline {
-  font-size: 24px;
+  font-size: 2.3rem;
   font-family: 'Roboto', sans-serif !important; }
 #hero #codingtext, #hero #datatext {
   color: white;
-  font-size: 20px; }
+  font-size: 1.3rem;
+  line-height: 1.2; }
 #hero #codingheadline {
   color: #38bcdb; }
 #hero #dataheadline {
@@ -167,7 +192,7 @@ p, h2 {
   #feature #dOne {
     order: 1; }
     #feature #dOne img {
-      width: 100%; }
+      max-width: 80%; }
   #feature #dTwo {
     order: 2; }
   #feature #dThree {
@@ -178,7 +203,7 @@ p, h2 {
     color: white;
     text-decoration: underline;
     line-height: 2;
-    font-size: 1.2em;
+    font-size: 2.4rem;
     font-weight: 400; }
 
 #ourstory {
@@ -187,7 +212,7 @@ p, h2 {
   #ourstory .ostext {
     text-align: center;
     margin: 0 auto;
-    padding: 2.5em;
+    padding: 2.4rem;
     z-index: 4;
     top: 10%; }
     #ourstory .ostext h2 a, #ourstory .ostext h2 a:visited {
@@ -203,25 +228,25 @@ p, h2 {
 
 #faq {
   background-image: url("../images/mobile/fap_mobile.jpg");
-  height: 850px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom; }
+  background-position: right 50% bottom; }
   #faq h2 a, #faq h2 a:visited {
     color: black;
     text-decoration: underline;
-    line-height: 2;
-    font-size: 1.2em;
-    font-weight: 400; }
+    font-family: 'Roboto', san-serif !important;
+    font-size: 2.5rem;
+    font-weight: 600; }
 
 #accordion {
-  max-width: 500px; }
+  color: black;
+  font-family: 'Roboto Slab', serif !important; }
   #accordion h3 {
-    color: #A9AAAB;
-    font-size: 20px; }
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: .35em; }
   #accordion li {
-    font-size: 16px;
-    color: #A9AAAB; }
+    font-size: 1rem; }
 
 .ui-icon.iconOpen {
   background: url("../images/misc/open.png") no-repeat;
@@ -245,9 +270,20 @@ p, h2 {
 
 #footer {
   background: #38bcdb;
-  padding: 0; }
+  color: black;
+  font-size: 12px;
+  padding: 0;
+  font-family: 'Roboto Slab', serif !important; }
+  #footer .logo img {
+    max-height: 120px; }
 
 @media (min-width: 768px) {
+  #hero h1 {
+    font-size: 2.8rem; }
+
+  #hero #learn2 {
+    display: none !important; }
+
   .o-banner__img {
     background-image: url("../images/about.jpg");
     height: 180%;
@@ -262,7 +298,8 @@ p, h2 {
     #feature #dThree {
       order: 3; }
     #feature #dFour {
-      order: 4; }
+      order: 4;
+      text-align: center; }
 
   .littlebreak {
     display: none; }
@@ -274,11 +311,46 @@ p, h2 {
     text-align: right; }
 
   #faq {
-    background-image: url("../images/faq.jpg");
-    height: 800px; } }
+    background-image: url("../images/faq.jpg"); } }
+@media (min-width: 992px) {
+  #hero h1 {
+    font-size: 3rem; } }
 @media (max-width: 767px) {
+  .logo img {
+    max-height: 90px; }
+
   .container {
     max-width: none;
-    padding: 0; } }
+    padding: 0; }
+
+  #header {
+    background: black; }
+
+  #hero #learn {
+    display: none; }
+
+  #hero #programinfo {
+    background: white;
+    border-radius: 0; }
+
+  #codinganimation {
+    display: none; }
+
+  #faq {
+    height: 900px; }
+
+  #footer {
+    font-size: 16px; }
+
+  #footer .logo img {
+    max-height: 120px; } }
+@media (max-width: 991px) {
+  #hero #codingheadline, #hero #dataheadline {
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif !important; }
+
+  #hero #codingtext, #hero #datatext {
+    color: white;
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
