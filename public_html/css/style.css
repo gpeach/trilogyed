@@ -16,7 +16,6 @@ p, h2 {
   margin: 20px; }
 
 .container-fluid {
-  min-width: 480px;
   margin: 0 auto;
   padding-right: 0px !important;
   padding-left: 0px !important; }
@@ -97,9 +96,9 @@ p, h2 {
   opacity: 1;
   position: absolute; }
 #hero .fa-angle-left {
-  padding-right: 50px; }
+  padding-right: 1em; }
 #hero .fa-angle-right {
-  padding-left: 50px; }
+  padding-left: 1em; }
 #hero #learnline {
   height: 4px;
   margin-top: .5em;
@@ -238,6 +237,9 @@ p, h2 {
     font-size: 2.5rem;
     font-weight: 600; }
 
+.ui-accordion-header, .ui-accordion-content {
+  margin-bottom: .4em !important; }
+
 #accordion {
   color: black;
   font-family: 'Roboto Slab', serif !important; }
@@ -311,7 +313,8 @@ p, h2 {
     text-align: right; }
 
   #faq {
-    background-image: url("../images/faq.jpg"); } }
+    background-image: url("../images/faq.jpg");
+    min-height: 800px; } }
 @media (min-width: 992px) {
   #hero h1 {
     font-size: 3rem; } }
