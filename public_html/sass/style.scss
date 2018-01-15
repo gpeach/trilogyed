@@ -333,6 +333,9 @@ p, h2 {
         }
     }
 }
+.ui-accordion-header, .ui-accordion-content {
+    margin-bottom: .4em !important;;
+}
 #accordion {
     color: black;
     font-family: 'Roboto Slab', serif !important;
@@ -420,7 +423,7 @@ p, h2 {
     }
     #faq {
         background-image: url('../images/faq.jpg');
-        //height: 800px;
+        min-height: 800px;
     }
 }
 @media(min-width: 992px){
